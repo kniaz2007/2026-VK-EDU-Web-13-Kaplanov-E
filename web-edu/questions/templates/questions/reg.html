@@ -1,0 +1,45 @@
+{% extends 'questions/layout/base.html' %}
+{% block content %}
+<div class="col-8 registration ms-5">
+    <div class ="row">
+    <h2 class = "col-4">Registration</h2>
+    </div> 
+    <p class = "Error"> Sorry, this email address already registered!</p>
+    <div class = "row mb-3">
+        <h3 class = "col-2">Login</h3>
+        <div class = "ms-1 col-5">
+            <input type="text" class="form-control col-5">
+        </div>
+    </div>
+    <div class = "row mb-3">
+        <h3 class = "col-2">Email</h3>
+        <div class = "ms-1 col-5">
+            <input type="text" class="form-control col-5">
+        </div>
+    </div>
+    <div class = "row mb-3">
+        <h3 class = "col-2">NickName</h3>
+        <div class = "ms-1 col-5">
+            <input type="text" class="form-control col-5">
+        </div>
+    </div>
+    <div class = "row mb-3">
+        <h3 class = "col-2">Password</h3>
+        <div class = "ms-1 col-5">
+            <input type="password" class="form-control col-5">
+        </div>
+    </div>
+    <div class = "row mb-3">
+        <h3 class = "col-2">Repeat Password</h3>
+        <div class = "ms-1 col-5">
+            <input type="password" class="form-control col-5">
+        </div>
+    </div>
+    <div class="avatar">
+    <h3>Upload avatar</h3>
+        <input type="text" class="form-control">
+        <button class="my_btn">choose</button>
+</div>
+<button class="my_btn_reg">Regisrtation!</button>
+</div>
+{% endblock %}

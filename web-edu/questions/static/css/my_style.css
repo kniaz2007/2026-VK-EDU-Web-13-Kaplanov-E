@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
+/*index.html*/
+.headsite {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #6f42c1;
+    h1, h2, h3, p {
+        color:aliceblue;
+    }
+    a {
+        color:#38BDF8;
+    }
+    .header-search {
+        margin-top: 30px;
+    }
+    .user-avatar {
+        width: 100%;
+        min-width: 60px;
+        max-width: 60px;
+        max-height: auto;
+        margin-top: 15px;
+        margin-bottom: 7px;
+    }
+    .user-info{
+        margin-right: 0;
+    }
+    .head-user-actions .logout{
+        margin-left: 10px;
+    }
+    .star {
+        width: 65px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 50px;
+        font-family: "Alegreya", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+input[type = search]{
+    margin-left: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 35px;
+    border:3px solid aliceblue;
+    border-radius: 16px;
+    color:#3C296E;
+    outline: none;
+}
+input[type = search]:focus{
+    margin-left: 0;
+    width: 100%;
+    max-width: 515px;
+    height: 35px;
+    padding-left:40px;
+
+}
+input[type = search]:focus::placeholder, input[type = search]:focus-visible::placeholder{
+  color: transparent;
+}
+.loupa_icon{
+    position:absolute;
+    margin-left: 10px;
+    margin-top: 6px;
+    color:transparent;
+}
+.header-search{
+    position: relative;
+}
+ .header-search:has(input[type=search]:focus) .loupa_icon {
+        color:#3C296E;
+    }
+
+.header-search button{
+    width: 100%;
+    max-width: 70px;
+    height: 30px;
+    border:2px solid aliceblue;
+    border-radius: 16px;
+    background: #8E9EE8;
+    color:aliceblue;
+    -webkit-box-shadow: 6px 6px 6px 6px #3C296E; 
+    box-shadow: 6px 6px 6px 6px #3C296E;
+    cursor: pointer;
+
+}
+.header-search button:hover{
+    -webkit-box-shadow: 8px 8px 8px 8px #3C296E; 
+    box-shadow: 8px 8px 8px 8px #3C296E;
+}
+.header-search button:active{
+    background: #6f42c1;
+    -webkit-box-shadow: 8px 8px 8px 8px #3C296E; 
+    box-shadow: 8px 8px 8px 8px #3C296E;
+}
+
+body{
+    background: #241847;
+    h1, h2, h3, p {
+        color:aliceblue;
+    }
+    .questions {
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    
+        .questions p {
+        font-size: 18px;
+        font-family: "Alegreya", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .questions h2 {
+        font-size: 40px;
+        font-family: "Alegreya", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .card{
+        background:#40356B;
+        display: flex;
+        flex:column;
+        box-shadow: 0px 0px 60px -14px rgba(255, 255, 255, 0.29);border-radius: 10px;background-color: #40356b;
+
+    }
+    .card-body{
+        display: flex;
+    }
+    .laiks-and-user-avatar{
+        display:flex;
+        flex-direction:column;
+    }
+    .my_buttons{
+        display:flex;
+        margin-top: 50px;
+        margin-right: 5px;
+    }
+    .my_buttons button{
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    border:2px solid aliceblue;
+    border-radius: 10px;
+    background: #8E9EE8;
+    color:aliceblue;
+    }
+    .my_buttons button:hover{
+    background: #6f42c1;
+    }
+    .my_buttons button:active{
+        transform: scale(0.9);
+    }
+    .my_buttons .btn:active{
+        transform: scale(1);
+    }
+    .my_buttons .btn, .my_buttons .btn:active, .my_buttons .btn:hover{
+        max-width: 20px;
+        height: 30px;
+        background: #8E9EE8;
+        border:2px solid aliceblue;
+        color:aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .user-avatar{
+        min-width: 60px;
+        max-width: 60px;
+        max-height: 60px;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        margin-left: 0px;
+        margin-right: 25px;
+        flex-shrink: 0;
+    }
+    .footer {
+        margin-top: auto;
+        display: flex;
+        span{
+            color:aliceblue;
+            margin-left: 5px;
+        }
+        a{
+            color:#8E9EE8
+        }
+        .Time{
+            color:grey;
+        }
+    }
+    .info{
+        h1{
+            margin-left: 30px;
+            margin-top: 20px;
+            font-size:60px;
+            color:gold;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .Tags{
+            margin-left: 30px;
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            a{
+                 text-decoration: none;
+                 font-size:21px;
+                 color:aliceblue;
+            }
+        }
+        .members{
+            margin-left: 30px;
+            display:flex;
+            flex-direction: column;
+            gap:20px;
+            a{
+                 font-size:21px;
+                 color:#8E9EE8;
+            }
+        }
+    }
+    .hot-question{
+        font-size:20px;
+        color:#8E9EE8;
+        margin-top:10px;
+    }
+/*add question*/
+.login-register {
+    margin-top: 50px;
+}
+.login-register .register{
+    margin-left: 20px;
+    }
+.new-question{
+    display:flex;
+    flex-direction: column;
+}
+.nq{
+        font-size: 40px;
+        font-family: "Alegreya", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin-left: 25px;
+        margin-top: 15px;
+}
+.title .card p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.text .card{
+    background:#40356B;
+    height: 250px;
+}
+.btn_ask{
+    height: 40px;
+    width:80px;
+    margin-top: 25px;
+    margin-left: 180px;
+    background-color: #8E9EE8;
+    color:aliceblue;
+    border-radius: 7px;
+    border:2px solid aliceblue;
+}
+.btn_ask:hover{
+box-shadow: 0px 0px 60px -14px rgba(255, 255, 255, 1);
+}
+.btn_ask:active{
+    background-color: #6f42c1;
+}
+.form-control, .form-control:focus {
+    background-color: #40356B; 
+    outline: none;
+    box-shadow: none; 
+    border-color:#40356B;
+    max-width: 670px;
+    width: 100%;
+    box-shadow: 0px 0px 60px -14px rgba(255, 255, 255, 0.29);border-radius: 10px;background-color: #40356b;
+    color:aliceblue;
+
+}
+.text .form-control{
+    height: 240px;
+    max-width: 670px;
+    width: 100%;
+}
+.one-question0{
+    display: flex;
+}
+.one-question1{
+    display:flex;
+    flex-direction: column;
+}
+hr {
+    color:aliceblue;
+    border-top:2px solid aliceblue;
+    opacity: 1; 
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.anser .form-control{
+    color:aliceblue;
+    width: 100%;
+    height: 100px;
+    max-width:700px;
+}
+.anser .form-control::placeholder{
+    color:aliceblue;
+}
+}
+.pagination .page-item.active .page-link{
+    background-color: #6f42c1 !important;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;               
+    margin: 20px 0;         
+}
+.page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    background-color: #40356B; 
+    color: aliceblue;          
+    text-decoration: none;     
+    border: 2px solid #8E9EE8; 
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;          
+}
+
+
+.page-btn:hover {
+    background-color: #8E9EE8;
+    color: #3C296E;
+}
+
+.page-btn.active {
+    background-color: #8E9EE8;
+    color: #3C296E;
+    transform: scale(0.7);      
+}
+.Error {
+    color: #E82AB4;
+}
+.registration h2 {
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.registration h3 {
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.my_btn {
+  height: 40px;
+    width:80px;
+    margin-top: 0px;
+    background-color: #8E9EE8;
+    color:aliceblue;
+    border-radius: 7px;
+    border:2px solid aliceblue;  
+}
+
+.my_btn:hover{
+box-shadow: 0px 0px 60px -14px rgba(255, 255, 255, 1);
+}
+
+.my_btn:active {
+   background-color: #6f42c1;  
+}
+.avatar .form-control {
+    width:200px;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.my_btn_reg {
+    height: 60px;
+    width:200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: #8E9EE8;
+    color:aliceblue;
+    border-radius: 7px;
+    border:2px solid aliceblue;  
+    font-size: 30px;
+}
+.my_btn_reg:hover{
+box-shadow: 0px 0px 60px -14px rgba(90, 90, 90, 1);
+}
+.my_btn_reg:active {
+   background-color: #6f42c1;  
+}
+.my_btn_login {
+    height: 60px;
+    width:200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: #8E9EE8;
+    color:aliceblue;
+    border-radius: 7px;
+    border:2px solid aliceblue;  
+    font-size: 30px;
+}
+.my_btn_login:hover{
+box-shadow: 0px 0px 60px -14px rgba(90, 90, 90, 1);
+}
+.my_btn_login:active {
+   background-color: #6f42c1;  
+}
+.login h2 {
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-left:50px;
+}
+.login h3 {
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-left:50px;
+}
+.login a {
+    color:#38BDF8;
+    margin-left: 90px;
+    margin-top: 70px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.login .ref_new_acc {
+    margin-top: 40px;
+}
+.main-sector a{
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-left:0;
+    text-decoration: none;
+    color:aliceblue;
+}
+.my_btn_save {
+    height: 60px;
+    width:120px;
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: #8E9EE8;
+    color:aliceblue;
+    border-radius: 7px;
+    border:2px solid aliceblue;  
+    font-size: 30px;
+}
+.my_btn_save:hover{
+box-shadow: 0px 0px 60px -14px rgba(90, 90, 90, 1);
+}
+.my_btn_save:active {
+   background-color: #6f42c1;  
+}

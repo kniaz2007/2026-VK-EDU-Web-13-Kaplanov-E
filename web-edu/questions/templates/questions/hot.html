@@ -1,0 +1,13 @@
+{% extends 'questions/layout/base.html' %}
+{% block content %}
+<div class="col-8 questions">
+    <div class ="row">
+    <h2 class = "col-4">Hot Questions</h2>
+    <a href="{% url 'index' %}" class="hot-question col-6">New Questions</a>
+    </div>
+    {% for question in questions %}
+    {% include 'questions/partials/question_one.html' with question_one=question %}
+    {% endfor %}
+    {% include 'questions/partials/pagination.html' %}  
+</div>
+{% endblock %}
