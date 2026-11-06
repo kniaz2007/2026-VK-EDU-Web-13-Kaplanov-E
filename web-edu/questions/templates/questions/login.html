@@ -1,0 +1,24 @@
+{% extends 'questions/layout/base.html' %}
+{% block content %}
+<div class="col-8 login">
+    <div class ="row">
+    <h2 class = "col-4">Log in</h2>
+    </div> 
+    <div class = "row mb-3">
+        <h3 class = "col-2">Login</h3>
+        <div class = "ms-1 col-5">
+            <input type="text" class="form-control col-5">
+        </div>
+    </div>
+    <div class = "row mb-3">
+        <h3 class = "col-2">Email</h3>
+        <div class = "ms-1 col-5">
+            <input type="text" class="form-control col-5">
+        </div>
+    </div>
+    <button class="my_btn_login">Log in!</button>
+    <div class = "ref_new_acc">
+    <a href ="{% url 'reg' %}">create a new account</a>
+    </div>
+</div>
+{% endblock %}
