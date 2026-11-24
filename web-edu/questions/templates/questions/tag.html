@@ -2,10 +2,13 @@
 {% block content %}
 <div class="col-8 questions">
     <div class ="row">
-    <h2 class = "col-4">Tag</h2>
+    <h2 class = "col-4">{{tag.name}}</h2>
+    <hr>
     </div>
     {% for question in questions %}
     {% include 'questions/partials/question_one.html' with question_one=question %}
+    {% empty %}
+    <h2>Нет ответов по этому тегу. Будь первым!</h2>
     {% endfor %}
     {% include 'questions/partials/pagination.html' %}            
 </div>

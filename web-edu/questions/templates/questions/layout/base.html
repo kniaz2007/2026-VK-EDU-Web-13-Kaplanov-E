@@ -52,15 +52,9 @@
         <div class = "col-3 info">
             <h1>Popular Tags</h1>
             <div class = "Tags">
-            <a href = "{% url 'tag' %}">bender1</a>
-            <a href = "{% url 'tag' %}">bender2</a>
-            <a href = "{% url 'tag' %}">bender3</a>
-            <a href = "{% url 'tag' %}">bender4</a>
-            <a href = "{% url 'tag' %}">bender5</a>
-            <a href = "{% url 'tag' %}">bender6</a>
-            <a href = "{% url 'tag' %}">bender6</a>
-            <a href = "{% url 'tag' %}">bender6</a>
-            <a href = "{% url 'tag' %}">bender6</a>
+            {% for t in popular_tags %}
+                <a href="{% url 'tag' t.name %}">{{ t.name }}</a>
+            {% endfor %}
             </div>
             <h1>Best Members</h1>
             <div class = "members">
@@ -71,4 +65,9 @@
         </div>
         </div>
     </main>
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 AskSage. Все права защищены.</p>
+    </div>
+</footer>
 </body>
