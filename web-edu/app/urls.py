@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from questions import views
+from debug_toolbar.toolbar import debug_toolbar_urls
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,9 +27,12 @@ urlpatterns = [
     path('add_question',views.add, name = "add_question"),
     path('registration',views.reg, name = "reg"),
     path('login', views.login, name = "login"),
-    path('one_question', views.one_question, name = "one_question"),
+    path('one_question/<int:question_id>/', views.one_question, name = "one_question"),
     path('setings', views.setings, name = "setings"),
-    path('tag', views.tag, name = "tag"),
+    path('tag/<tag_name>/', views.tag, name = "tag"),
     
 ]
+
+if settings.DEBUG:
+    urlpatterns += debug_toolbar_urls()
 
